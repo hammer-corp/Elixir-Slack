@@ -35,6 +35,7 @@ defmodule Slack.Sends do
     end
   end
   def send_message(text, channel, slack) do
+    IO.puts "text: #{text}, channel: #{channel}"
     %{
       type: "message",
       text: text,
